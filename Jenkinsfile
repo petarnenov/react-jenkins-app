@@ -4,7 +4,8 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                sh 'docker build -t react-app .'
+                sh 'ls -ltr'
+                //sh 'docker build -t react-app .'
             }
         }
         stage('Test') {
@@ -15,7 +16,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying..'
-                sh 'docker run --rm -d -p 80:80 react-app:latest'
+                // sh 'docker run --rm -d -p 80:80 react-app:latest'
             }
         }
     }

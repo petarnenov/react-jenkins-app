@@ -17,5 +17,13 @@ pipeline {
       }
     }
 
+    stage('Pack') {
+      steps {
+        sh '''npm build
+ls -ltr
+'''
+      }
+    }
+
   }
 }

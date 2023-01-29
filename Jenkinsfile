@@ -15,7 +15,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying..'
-                sh 'docker run --rm -d -p 80:80/tcp react-app:latest'
+                sh 'docker run --rm -d -p 80:80 react-app:latest'
             }
         }
     }

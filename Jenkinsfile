@@ -3,7 +3,8 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh '''docker build -t react-app .
+        sh '''npm ci
+
 
 '''
       }

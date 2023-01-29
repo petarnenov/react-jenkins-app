@@ -3,7 +3,8 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh '''ls -ltr
+        sh '''docker build -t react-apt .
+
 
 '''
       }

@@ -19,7 +19,7 @@ pipeline {
 
     stage('Pack') {
       steps {
-        sh '''npm build
+        sh '''npm run build
 ls -ltr
 '''
       }
